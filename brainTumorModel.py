@@ -1,13 +1,6 @@
-import os
-import numpy as np
-import cv2
-from glob import glob
-from tqdm import tqdm
 import tensorflow as tf
-from tensorflow.keras import backend as K
-from tensorflow.keras.callbacks import ModelCheckpoint, ReduceLROnPlateau, EarlyStopping, CSVLogger
-from tensorflow.keras.optimizers import Adam
-from sklearn.model_selection import train_test_split
+from tensorflow.keras.layers import Conv2D, BatchNormalization, Activation, MaxPool2D, Conv2DTranspose, Concatenate, Input
+from tensorflow.keras.models import Model
 
 def conv_block(inputs, num_filters):
     x = Conv2D(num_filters, 3, padding="same")(inputs)
