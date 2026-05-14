@@ -1,6 +1,8 @@
 import cv2
 import numpy as np
 import glob
+import tensorflow as tf
+import os
 from sklearn.model_selection import train_test_split
 H = W = 256
 def read_image(path):
