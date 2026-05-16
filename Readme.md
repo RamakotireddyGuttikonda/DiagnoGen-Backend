@@ -5,6 +5,7 @@ This project implements a **Brain Tumor Segmentation Model** based on the **U-Ne
 
 ## Dataset
 
+Download dataset and add it to /data folder and change path to dataset in train.py
 You can download the dataset from the link below:
 
 [Brain Tumor Dataset](https://drive.google.com/drive/folders/1U2x_jfEaxU1ajrhSTW6oulIoLgFdklRG?usp=sharing)
